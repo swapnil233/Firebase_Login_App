@@ -11,7 +11,7 @@
     tools:context=".Register">
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/registerUsername"
 
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -27,12 +27,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/registerPassword"
 
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
 
         android:hint="Password"
@@ -40,11 +39,12 @@
         android:inputType="textPassword"
         android:selectAllOnFocus="true"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username" />
+        app:layout_constraintTop_toBottomOf="@+id/registerUsername" />
 
     <Button
-        android:id="@+id/login"
+        android:id="@+id/register"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -54,13 +54,11 @@
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="64dp"
 
-        android:enabled="false"
         android:text="Register"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password"
         app:layout_constraintVertical_bias="0.2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
