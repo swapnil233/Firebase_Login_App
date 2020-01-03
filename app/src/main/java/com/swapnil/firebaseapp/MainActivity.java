@@ -20,8 +20,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mRegister = findViewById(R.id.register);
-        mLogin = findViewById(R.id.logIn);
+        mRegister = findViewById(R.id.registerTransfer);
+        mLogin = findViewById(R.id.loginTransfer);
 
         mRegister.setOnClickListener(new View.OnClickListener() {
             @Override
