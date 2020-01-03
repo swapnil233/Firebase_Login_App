@@ -39,6 +39,7 @@ If you followed Firebase instructions, and you are using my code, just connect y
 ## Authors
 
 * **MD Hasan Sahria Iqbal** - *App Build* - [Swapnil Iqbal](https://github.com/swapnil233)
+* **Nadir El-Tahir** - *Tester* - [Couls](https://github.com/Couls)
 
 ## License
 
