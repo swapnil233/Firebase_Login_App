@@ -6,6 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -16,6 +17,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class Register extends AppCompatActivity {
 
@@ -31,6 +33,7 @@ public class Register extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
+        // Buttons and inputs
         mRegister = findViewById(R.id.register);
         registerEmailInput = findViewById(R.id.registerUsername);
         registerPasswordInput = findViewById(R.id.registerPassword);
@@ -50,6 +53,10 @@ public class Register extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             Toast.makeText(Register.this, "Registered Successfully", Toast.LENGTH_LONG).show();
+                            FirebaseUser user = mAuth.getCurrentUser();
+
+                            // TODO: 01/04/2020 create updateUI method in Register class, call it inside button onclick 
+
                         } else {
                             Toast.makeText(Register.this, task.getException().getMessage(), Toast.LENGTH_LONG).show(); //ie user exists, wrong data, etc
                         }
@@ -58,5 +65,5 @@ public class Register extends AppCompatActivity {
             }
         });
 
-    }
+    } // end of onCreate()
 }
