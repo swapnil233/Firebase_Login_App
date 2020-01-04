@@ -1,8 +1,3 @@
-// TODO: 01/03/2020 add "Register" title to activity_register.xml
-// TODO: 01/03/2020 lead new registered users to SignedInUser page
-// TODO: 01/03/2020 implement sign in algorithm
-// TODO: 01/03/2020 lead signed in users to SignedInUser page 
-
 package com.swapnil.firebaseapp;
 
 import androidx.appcompat.app.AppCompatActivity;

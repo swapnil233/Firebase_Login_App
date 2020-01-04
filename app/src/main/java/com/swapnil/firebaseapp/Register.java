@@ -1,3 +1,5 @@
+// TODO: 01/03/2020 add "Register" title to activity_register.xml
+
 package com.swapnil.firebaseapp;
 
 import androidx.annotation.NonNull;
