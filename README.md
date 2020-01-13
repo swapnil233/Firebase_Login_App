@@ -12,7 +12,7 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```
-Computer with 4GB RAM or above is ideal
+
 Android Studios software https://developer.android.com/studio/?gclid=CjwKCAiA6bvwBRBbEiwAUER6JU-n5T0UOyNUNG58KgPhCOcXDai5imo3sG44nyhyqvv_TkEQmyzlWBoC5O0QAvD_BwE
 
 ```
@@ -25,7 +25,7 @@ Step 1 - Set up your own Firebase Project in https://firebase.google.com/
 
 ```
 Follow the instructions to init a new Android project
-Make sure to replace my google-services.json file with the one you need to download
+Make sure to replace my google-services.json file with the one you download (follow their steps)
 ```
 
 Step 2 - Enable Email/Password signup method to accept new users
