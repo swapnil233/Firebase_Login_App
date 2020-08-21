@@ -55,7 +55,7 @@ public class Register extends AppCompatActivity {
                             Toast.makeText(Register.this, "Registered Successfully", Toast.LENGTH_LONG).show();
                             FirebaseUser user = mAuth.getCurrentUser();
 
-                            // TODO: 01/04/2020 create updateUI method in Register class, call it inside button onclick 
+                            // TODO: 01/04/2020 create updateUI method in Register class, call it inside button onclick
 
                         } else {
                             Toast.makeText(Register.this, task.getException().getMessage(), Toast.LENGTH_LONG).show(); //ie user exists, wrong data, etc
